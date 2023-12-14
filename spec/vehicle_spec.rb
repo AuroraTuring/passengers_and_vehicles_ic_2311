@@ -17,11 +17,11 @@ RSpec.describe Vehicle do
       expect(@vehicle.year).to eq("2001")
       expect(@vehicle.make).to eq("Honda")
       expect(@vehicle.model).to eq("Civic")
-      expect(@vehicle.speeding?).to eq(false)
+      expect(@vehicle.speeding?).to be(false)
 
       @vehicle.speed
 
-      expect(@vehicle.speeding?).to eq(true)
+      expect(@vehicle.speeding?).to be(true)
       expect(@vehicle.passengers).to eq([])
 
       @vehicle.add_passenger(charlie)
