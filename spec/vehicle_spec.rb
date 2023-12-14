@@ -28,7 +28,7 @@ RSpec.describe Vehicle do
       @vehicle.add_passenger(jude)
       @vehicle.add_passenger(taylor)
 
-      expect(@vehicle.passengers).to eq(:passenger)
+      expect(@vehicle.passengers).to eq(:passengers)
       expect(@vehicle.num_adults).to eq(2)
     end
   end
