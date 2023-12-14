@@ -24,11 +24,11 @@ RSpec.describe Vehicle do
       expect(@vehicle.speeding?).to be(true)
       expect(@vehicle.passengers).to eq([])
 
-      @vehicle.add_passenger(charlie)
-      @vehicle.add_passenger(jude)
-      @vehicle.add_passenger(taylor)
+      @vehicle.add_passenger(@charlie)
+      @vehicle.add_passenger(@jude)
+      @vehicle.add_passenger(@taylor)
 
-      expect(@vehicle.passengers).to eq(charlie, taylor, jude)
+      expect(@vehicle.passengers).to eq([charlie, taylor, jude])
       expect(@vehicle.num_adults).to eq(2)
     end
   end
