@@ -15,9 +15,9 @@ class Passenger
     end
   end
 
-  # def driver?
-  #   method 
-  # end
+  def driver?
+    @driver
+  end
 
   def drive
     if adult?
