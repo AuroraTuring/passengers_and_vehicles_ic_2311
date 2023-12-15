@@ -1,5 +1,5 @@
 class Park
-  attr_reader :name, :admission_price, :vehicles, :visitors
+  attr_reader :name, :admission_price, :vehicles, :visitors, :revenue
 
   def initialize (name, admission_price)
     @name = name
